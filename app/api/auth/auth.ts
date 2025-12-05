@@ -37,7 +37,5 @@ const authOptions: NextAuthConfig = {
   },
 };
 
-const { handlers } = NextAuth(authOptions);
-
-export const { GET, POST } = handlers;
+export const { auth, signIn, signOut } = NextAuth(authOptions);
 

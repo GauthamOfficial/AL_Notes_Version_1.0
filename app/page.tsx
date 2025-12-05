@@ -112,9 +112,19 @@ export default function HomePage() {
       {/* Footer - Minimal */}
       <footer className="bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm border-t border-gray-100 dark:border-gray-700 mt-16 w-full">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <p className="text-center text-text-secondary dark:text-gray-400 text-sm">
-            © 2025 A/L நோTස් - Helping students recover from natural disasters
-          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-center sm:text-left text-text-secondary dark:text-gray-400 text-sm">
+              © 2025 A/L நோTස් - Helping students recover from natural disasters
+            </p>
+            <div className="flex gap-4 text-sm">
+              <Link href="/privacy" className="text-text-secondary dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
+                Privacy Policy
+              </Link>
+              <Link href="/terms" className="text-text-secondary dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
+                Terms of Service
+              </Link>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
